@@ -228,6 +228,16 @@ docker run --name chatgpt-web -d -p 3002:3002 -e OPENAI_API_BASE_URL=https://ope
 
 可安装 [Switcher 插件](https://github.com/RockChinQ/Switcher)在运行时切换所使用的模型。
 
+#### Epsilla - 开源向量数据库
+
+项目主页: https://github.com/epsilla-cloud/vectordb
+
+```bash
+docker run --pull=always -d -p 8888:8888 epsilla/vectordb
+```
+
+Docker部署完成后，根据[文档](https://epsilla-inc.gitbook.io/epsilladb/quick-start)进行向量查询。查询延迟比同类数据库快10倍。
+
 ### 部署到第三方平台
 <details>
 <summary><strong>部署到 Sealos </strong></summary>
@@ -400,6 +410,7 @@ https://openai.justsong.cn
 ## 相关项目
 * [FastGPT](https://github.com/labring/FastGPT): 基于 LLM 大语言模型的知识库问答系统
 * [ChatGPT Next Web](https://github.com/Yidadaa/ChatGPT-Next-Web):  一键拥有你自己的跨平台 ChatGPT 应用
+* [Epsilla](https://epsilla.com/?ref=oneapi): 开源的向量数据库，向量搜索比其他数据库快 10 倍。
 
 ## 注意
 
